@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="logo.png" type="image/png">
+	<title>Gerome Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+<style>
+	h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+
+  #polaris-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+  }
+
+  #polaris-section .vega-heading {
+    font-size: 24px;
+    color: #333;
+  }
+
+  #polaris-section .sirius-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #polaris-section .altair-image {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  #polaris-section .altair-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    #polaris-section .altair-image {
+      width: 40px; /* Reduce image size for smaller screens */
+    }
+  }
+
+  .juanluna-footer {
+    background: #0d0c1c;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .juanluna-footer .fernandoamorsolo-top {
+    padding: 60px 0 40px;
+  }
+
+  .juanluna-footer h3 {
+    color: #6ccdfd;
+    font-size: 22.4px; /* 28 * 0.8 */
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+
+  .juanluna-footer .vicentemanansala-text {
+    color: rgba(255,255,255,0.7);
+    font-size: 17.6px; /* 22 * 0.8 */
+    line-height: 1.6;
+    max-width: 520px;
+    letter-spacing: 0.2px;
+  }
+
+  .carlosfrancisco-icons {
+    margin-top: 30px;
+  }
+
+  .carlosfrancisco-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: rgba(108,205,253,0.15);
+    color: #6ccdfd;
+    font-size: 24px; /* 30 * 0.8 */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .carlosfrancisco-icons a:hover {
+    background: #544cc2;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .napoleonabueva-links {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  .napoleonabueva-links li {
+    margin-bottom: 22px;
+  }
+
+  .napoleonabueva-links a {
+    color: #fff;
+    font-size: 17.6px; /* 22 * 0.8 */
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .napoleonabueva-links a:hover {
+    text-decoration: none;
+    color: #6ccdfd;
+  }
+
+  .napoleonabueva-links i {
+    color: #e7a232;
+    margin-right: 16px;
+    font-size: 17.6px; /* 22 * 0.8 */
+  }
+
+  .benedictofernandez-box {
+    background: #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    max-width: 460px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+  }
+
+  .benedictofernandez-box img {
+    width: 100%;
+    display: block;
+  }
+
+  .hidalgotan-footerbottom {
+    background: #544cc2;
+    padding: 26px 0;
+    text-align: center;
+    font-size: 14.4px; /* 18 * 0.8 */
+    color: #fff;
+  }
+
+  .hidalgotan-footerbottom a {
+    color: #e7a232;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .hidalgotan-footerbottom a:hover {
+    color: #fff;
+  }
+
+  .pablobaensantos-bubble {
+    position: fixed;
+    left: 28px;
+    bottom: 26px;
+    width: 78px;
+    height: 78px;
+    background: #e7a232;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30.4px; /* 38 * 0.8 */
+    box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+    z-index: 10;
+    text-decoration: none;
+  }
+
+  .anitaaguinaldo-scroll {
+    position: fixed;
+    right: 28px;
+    bottom: 78px;
+    width: 72px;
+    height: 72px;
+    border: 2px dashed #6ccdfd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 27.2px; /* 34 * 0.8 */
+    text-decoration: none;
+    z-index: 10;
+  }
+
+  .anitaaguinaldo-scroll span {
+    width: 54px;
+    height: 54px;
+    background: #544cc2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 991.98px) {
+    .juanluna-footer .arturolopez-col {
+      margin-bottom: 40px;
+    }
+
+    .juanluna-footer h3 {
+      font-size: 19.2px; /* 24 * 0.8 */
+    }
+
+    .juanluna-footer .vicentemanansala-text,
+    .napoleonabueva-links a {
+      font-size: 14.4px; /* 18 * 0.8 */
+    }
+
+    .carlosfrancisco-icons a {
+      width: 54px;
+      height: 54px;
+      font-size: 19.2px; /* 24 * 0.8 */
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .juanluna-footer .fernandoamorsolo-top {
+      padding: 40px 5% 20px;
+    }
+
+    .juanluna-footer h3 {
+      font-size: 17.6px; /* 22 * 0.8 */
+    }
+
+    .juanluna-footer .vicentemanansala-text,
+    .napoleonabueva-links a {
+      font-size: 12.8px; /* 16 * 0.8 */
+    }
+
+    .hidalgotan-footerbottom {
+      font-size: 12px; /* 15 * 0.8 */
+      padding: 18px 12px;
+    }
+
+    .pablobaensantos-bubble,
+    .anitaaguinaldo-scroll {
+      transform: scale(0.8);
+    }
+  }
+
+
+
+</style>
+</head>
+<script>
+function handleCardHover(isHovering) {
+	const card = document.getElementById('tools-card');
+	if (isHovering) {
+		card.style.transform = 'scale(1.05)';
+		card.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
+	} else {
+		card.style.transform = 'scale(1)';
+		card.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+	}
+}
+
+function handleImageHover(image, isHovering) {
+	if (isHovering) {
+		image.style.transform = 'scale(1.1)';
+		image.style.opacity = '0.8';
+	} else {
+		image.style.transform = 'scale(1)';
+		image.style.opacity = '1';
+	}
+}
+
+
+</script>
+
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logoz.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="portfolio.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Portfolio</a>
+								<ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-graphics.html">Graphic Design</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-webdev.html">Web Development</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-socialmedia.html">Social Media </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-videos.html">Videos</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="https://blog.gerometayao.com/">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hell0</h3>
+							<h1 class="text-uppercase">I am Gerome</h1>
+							<h5 class="text-uppercase">IT Service Management Specialist <br>Graphic Designer | Layout Artist <br>CRM and Automation Strategist </h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="https://call.whatsapp.com/video/jsL9Ge3JEsy50aVCs3DGoe"><span>Contact Me</span></a>
+								<a class="primary_btn tr-bg" href="https://tech.gerometayao.com/CurriculumVitae.pdf" target="_blank"><span>Get CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>Who am I? <br>
+							</h2>
+						<p style="text-align: justify;">
+							Hi, I'm Gerome, a versatile professional with seven years of experience in multimedia, specializing in graphic design, animation, and video editing. I pride myself on my versatility and proficiency in diverse software and interfaces.
+						</p>
+						<p style="text-align: justify;">
+							Currently, I'm advancing as an ITSM Specialist, driven by my passion for innovation and teamwork. I'm committed to continuous learning and attentive collaboration, fostering positivity, adaptability, and effective communication. Beyond my technical expertise, I hold a keen interest in project management, business development, technopreneurship, marketing, and social media management, showcasing a holistic approach to my professional growth and development. 
+						</p>
+						<a class="primary_btn" href="https://www.linkedin.com/in/gerome-a-tayao/"><span>Connect with me on LinkedIn</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+		<!--================ Start Features Area =================-->
+		<section class="features_area">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<div class="main_title">
+							<h2>service offers </h2>
+							<p>
+								Empowering your digital journey with expertly crafted solutions, immersive multimedia experiences, and strategic marketing insights to elevate your brand presence and drive success in the digital age.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row feature_inner">
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s1.png" alt="">
+							<h4>IT Service</h4>
+							<p>Providing efficient and prompt resolution of IT issues, ensuring seamless infrastructure operations and user satisfaction.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s2.png" alt="">
+							<h4>Graphic Design</h4>
+							<p>Crafting visually stunning and impactful designs tailored to enhance brand identity and captivate audiences.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s4.png" alt="">
+							<h4>Multimedia Design</h4>
+							<p>Creating immersive and engaging multimedia experiences through the fusion of animation, video editing, and graphic elements.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s3.png" alt="">
+							<h4>Marketing</h4>
+							<p>Offering strategic insights and innovative approaches to amplify brand visibility, attract audiences, and drive business growth through digital channels.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End Features Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+	
+	<section class="brand_area section_gap_bottom">
+		<div class="main_title">
+			<h2>My Digital Toolbox</h2>
+			<p>
+				From organizing tasks to creating stunning visuals, here's what I use to get the job done.
+			</p>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+
+
+
+
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Graphics and Multimedia Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool1.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool2.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool3.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool4.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool5.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool6.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Social Media Management Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool7.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool8.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool9.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Web Design and Web Development Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool10.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool11.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool12.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool13.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool14.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool15.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							  <img src="img/tools/tool16.png" 
+								   alt="Service 7" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Marketing and Automation Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool17.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool18.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool19.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool33.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Project Management and Timetracking Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool21.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool20.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool22.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool23.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Communcation Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool24.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool25.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool26.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool27.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool28.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool29.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">7+</span>
+							<span class="smll">Years of Multimedia Experience</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">5+</span>
+							<span class="smll">Social Media Projects</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">5+</span>
+							<span class="smll">Marketing Campaigns</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">3+</span>
+							<span class="smll">Web Development Projects</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call me via</p>
+								<h3>09457819049</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brand Area =================-->
+
+
+	<div class="container">
+		<h2>Badges and Certifications</h2>
+		 <section class="customer-logos slider">
+			<div class="slide"><img src="img/brands/logo1.png"></div>
+			<div class="slide"><img src="img/brands/logo2.png"></div>
+			<div class="slide"><img src="img/brands/logo3.png"></div>
+			<div class="slide"><img src="img/brands/logo4.png"></div>
+			<div class="slide"><img src="img/brands/logo5.png"></div>
+			<div class="slide"><img src="img/brands/logo6.png"></div>
+			<div class="slide"><img src="img/brands/logo7.png"></div>
+			<div class="slide"><img src="img/brands/logo8.png"></div>
+			<div class="slide"><img src="img/brands/logo9.png"></div>
+			<div class="slide"><img src="img/brands/logo10.png"></div>
+			<div class="slide"><img src="img/brands/logo11.png"></div>
+			<div class="slide"><img src="img/brands/logo12.png"></div>
+			<div class="slide"><img src="img/brands/logo13.png"></div>
+			<div class="slide"><img src="img/brands/logo14.png"></div>
+			<div class="slide"><img src="img/brands/logo15.png"></div>
+		 </section>
+	  </div>
+
+<br><br><br><br>
+
+
+
+	<!--================Footer Area =================-->
+  <footer class="juanluna-footer">
+    <div class="container fernandoamorsolo-top">
+      <div class="row">
+        <!-- About Us -->
+        <div class="col-lg-5 arturolopez-col">
+          <h3>Kinaya, Kinakaya, Kakayanin!</h3>
+          <p class="vicentemanansala-text">
+            Thi is my guiding motto and commitment in life. Past challenges built my strength, present ones shape my resilience, and I face the future with confidence. If you’re looking for someone reliable and growth-driven, I’d be glad to connect and work with you.
+          </p>
+
+          <div class="carlosfrancisco-icons">
+            <a href="https://tech.gerometayao.com/"><i class="fa fa-link"></i></a>
+            <a href="https://www.facebook.com/gerome0224almario/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCj2qyfT2zOuNd8FR8nhpEjQ"><i class="fa fa-youtube-play"></i></a>
+            <a href="mailto:work.with.me@gerometayao.com"><i class="fa fa-envelope"></i></a>
+            <a href="tel:+639457819049"><i class="fa fa-phone"></i></a>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-3 arturolopez-col">
+          <h3>Useful Links</h3>
+          <ul class="napoleonabueva-links">
+            <li><a href="https://gerometayao.com/about.html"><i class="fa fa-angle-right"></i>About Me</a></li>
+            <li><a href="https://gerometayao.com/contact.html"><i class="fa fa-angle-right"></i>Contact Me</a></li>
+            <li><a href="https://gerometayao.com/portfolio-graphics.html"><i class="fa fa-angle-right"></i>Graphic Design</a></li>
+            <li><a href="https://gerometayao.com/portfolio-webdev.html"><i class="fa fa-angle-right"></i>Web Development</a></li>
+            <li><a href="https://gerometayao.com/portfolio-socialmedia.html"><i class="fa fa-angle-right"></i>Social Media</a></li>
+            <li><a href="https://tech.gerometayao.com/flipbook/"><i class="fa fa-angle-right"></i>Brochure</a></li>
+          </ul>
+        </div>
+
+        <!-- Facebook -->
+        <div class="col-lg-4 arturolopez-col">
+          <h3>Follow me on Facebook</h3>
+          <div class="benedictofernandez-box">
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgerome0224almario%2F&tabs=timeline&width=340&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidalgotan-footerbottom">
+      Copyright © 2026 – All Rights Reserved By
+      <a href="#">Gerome Almario Tayao</a>. Let’s create and innovate together!
+    </div>
+  </footer>
+
+	<!--================End Footer Area =================-->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script>
+		$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+	</script>
+	  <script src="//code.tidio.co/o5lic5nann7ykawli3qn3wco8jbb2xd7.js" async></script>
+
+</body>
+
+</html>

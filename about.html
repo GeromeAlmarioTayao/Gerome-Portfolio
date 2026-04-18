@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/logo.png" type="image/png">
+	<title>About Me</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+  <style>
+    /* Theme primary color */
+    :root {
+      --primary-color: #340094;
+    }
+
+    /* Section background and padding */
+    .about_area {
+      background-color: #f9f9f9;
+      padding: 60px 0;
+    }
+
+    /* Main Titles */
+    .main_title h2 {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .main_title h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+
+    /* Timeline container */
+    .timeline {
+      position: relative;
+      margin: 2rem 0 4rem 0;
+      padding-left: 40px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    /* Timeline items */
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.6s forwards;
+    }
+    .timeline-item:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .timeline-item:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .timeline-item:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    .timeline-item:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+    .timeline-item:nth-child(5) {
+      animation-delay: 1s;
+    }
+    .timeline-item:nth-child(6) {
+      animation-delay: 1.2s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Timeline icon circle */
+    .timeline-icon {
+      position: absolute;
+      left: -30px;
+      top: 4px;
+      background-color: var(--primary-color);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 48;
+      box-shadow: 0 2px 8px rgb(52 0 148 / 0.4);
+      transition: background-color 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+    .timeline-icon:hover {
+      background-color: #1c0066;
+    }
+
+    /* Card modifications */
+    .timeline-content {
+      background: white;
+      border-radius: 12px;
+      padding: 20px 25px;
+      box-shadow: 0 6px 24px rgb(52 0 148 / 0.1);
+      text-align: left;
+      transition: box-shadow 0.3s ease;
+    }
+    .timeline-content:hover {
+      box-shadow: 0 12px 48px rgb(52 0 148 / 0.2);
+    }
+    .timeline-content h4 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+    .timeline-content span.date {
+      float: right;
+      font-weight: 500;
+      color: #198754; /* success green */
+      font-size: 0.9rem;
+    }
+    .timeline-content p {
+      color: #212529; /* standard body color */
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+      .timeline {
+        padding-left: 20px;
+        border-left-width: 3px;
+      }
+      .timeline-icon {
+        left: -24px;
+        width: 40px;
+        height: 40px;
+        font-size: 32px;
+      }
+      .main_title h2 {
+        font-size: 2rem;
+      }
+      .timeline-content h4 {
+        font-size: 1.2rem;
+      }
+    }
+            .main_title h2 {
+            color: #340094;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        .main_title h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #340094;
+            margin-top: 8px;
+            border-radius: 4px;
+        }
+
+        /* Card modifications */
+        .awards_area .card {
+            border: 2px solid #340094;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensures equal height for cards */
+        }
+        .awards_area .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 24px rgb(52 0 148 / 0.3);
+            border-color: #1c0066;
+        }
+        .award-icon {
+            margin-bottom: 15px;
+            font-size: 48px;
+            color: #340094;
+        }
+        .card-title {
+            color: #340094 !important;
+            font-size: 1.2rem;
+        }
+        .date {
+            font-size: 0.9rem;
+            color: #6c757d; /* muted color */
+        }
+
+  </style>
+</head>
+
+<body>
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logoz.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="portfolio.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Portfolio</a>
+								<ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-graphics.html">Graphic Design</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-webdev.html">Web Development</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-socialmedia.html">Social Media </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-videos.html">Videos</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="https://blog.gerometayao.com/">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>About Me</h2>
+                    <div class="page_link">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Banner Area =================-->
+    
+   <!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+        <div class="container">
+            <div class="row justify-content-start align-items-center">
+                <div class="col-lg-5">
+                    <div class="about_img">
+                        <img class="" src="img/about-us.png" alt="">
+                    </div>
+                </div>
+
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="main_title text-left">
+                        <h2>To Introduce<br>
+                            about myself<br>
+                            </h2>
+                        <p>
+                            Hello, I'm Gerome, a highly adaptable professional with seven years of multimedia experience, specializing in graphic design, animation, and video editing. I'm known for my versatility and adeptness in various software and interfaces. Currently, I'm pursuing a career as an IT Service Management Specialist, motivated by my passion for innovation and collaborative work. I prioritize continuous learning and collaborative efforts, emphasizing positivity, adaptability, and effective communication. In addition to my technical skills, I'm deeply interested in project management, business development, technopreneurship, marketing, and social media management, reflecting a comprehensive approach to my professional journey and aspirations.
+                        </p>
+<a class="primary_btn tr-bg" href="https://tech.gerometayao.com/CurriculumVitae.pdf" target="_blank"><span>Get CV</span></a>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End About Us Area =================-->
+
+
+	<!--================ Start Map Area =================-->
+	<div class="about_area section_gap_bottom">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="main_title text-center mb-4">
+          <h2>My Academic Background</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Tertiary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Tertiary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Tertiary Education <span class="date">2020 - 2024</span></h4>
+              <p><strong>Bachelor of Science in Information Technology <br /> with Specialization in Service Management</strong><br />Bulacan State University - Main Campus <br /> College of Information and Communications Technology<br />Guinhawa, City of Malolos, Bulacan</p>
+            </div>
+          </div>
+
+          <!-- Secondary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Secondary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Secondary Education <span class="date">2014 - 2020</span></h4>
+              <p><strong>Senior High School - Academic Track <br /> STEM Strand (Science, Technology, Engineering, and Mathematics)</strong><br />St. James Academy Plaridel Bulacan Inc.<br />Sta. Ines, Plaridel, Bulacan</p>
+            </div>
+          </div>
+          
+                    <!-- Primary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Primary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Primary Education <span class="date">2008 - 2014</span></h4>
+              <p>Plaridel Elementary School <br />Poblacion, Plaridel, Bulacan</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="main_title text-center mt-5 mb-4">
+          <h2>My Professional Background</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- IT and Sales Specialist -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="IT Intern icon">
+              <span class="material-symbols-outlined" aria-hidden="true">computer_arrow_up</span>
+            </div>
+            <div class="timeline-content">
+              <h4>IT and Sales Specialist<span class="date">July - Present</span></h4>
+              <p><strong>Results Marketing Partners - Lititz, Pennsylvania</strong><br />Managed digital marketing campaigns, optimized CRM systems, developed web content, closed client deals, provided technical support, and coordinated IT projects to enhance business growth and operational efficiency.</p>
+            </div>
+          </div>
+
+          <!-- IT Service Management Specialist Intern -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="IT Intern icon">
+              <span class="material-symbols-outlined" aria-hidden="true">computer</span>
+            </div>
+            <div class="timeline-content">
+              <h4>IT Service Management Specialist Intern <span class="date">January - May 2024</span></h4>
+              <p><strong>Results Marketing Partners - Lititz, Pennsylvania</strong><br />Diagnose and resolve IT issues promptly, prioritize tickets, analyze recurring problems, implement preventive measures, and contribute to continuous service improvement.</p>
+            </div>
+          </div>
+          
+                    <!-- Work Immersion Employee -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Work Immersion icon">
+              <span class="material-symbols-outlined" aria-hidden="true">work</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Work Immersion Employee <span class="date">November 2019</span></h4>
+              <p><strong>Municipality of Plaridel - General Service Office</strong><br />Sets plans, strategies, and programs for purchasing, property management, maintenance, and other general admin services with efficient implementation and compliance.</p>
+            </div>
+          </div>
+          
+                    <!-- Graphic Designer -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Graphic Designer icon">
+              <span class="material-symbols-outlined" aria-hidden="true">brush</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Graphic Designer & Multimedia Artist <span class="date">2017 - Present</span></h4>
+              <p><strong>Freelance (Commission Based)</strong><br />Develops visual assets used in campaigns, websites, and print. Highly proficient in Photoshop, Animate, Filmora, Canva, Picsart, etc.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+<div class="awards_area section_gap_bottom">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="main_title">
+                    <h2>Awards and Recognitions</h2>
+                </div>
+                <div class="row g-4">
+
+                    <!-- Award Card 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">social_leaderboard</span>
+                                </div>
+                                <h4 class="card-title">Magna Cum Laude</h4>
+                                <p class="card-text">Bulacan State University</p>
+                                <span class="date text-muted">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Gintong Hiraya Award: President's Lister</h4>
+                                <p class="card-text">Bulacan State University College of Information and Communications Technology</p>
+                                <span class="date text-muted">2023 - 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">contract</span>
+                                </div>
+                                <h4 class="card-title">Philippine Startup Challenge - Regional Pitching: Finalist</h4>
+                                <p class="card-text">DICT Region III</p>
+                                <span class="date text-muted">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 4 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">emoji_events</span>
+                                </div>
+                                <h4 class="card-title">PSITE-IRCITE IT Marketing Competition: 3rd Runner-up</h4>
+                                <p class="card-text">Philippine Society of Information Technology Educators </p>
+                                <span class="date text-muted">May 5, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 5 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">military_tech</span>
+                                </div>
+                                <h4 class="card-title">Alab Awards: Top 3 Outstanding BSIT Student Award</h4>
+                                <p class="card-text">Society for the Welfare of Information Technology Students</p>
+                                <span class="date text-muted">2022 - 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 6 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">military_tech</span>
+                                </div>
+                                <h4 class="card-title">Alab Awards: Top 3 Outstanding BSIT Student Award</h4>
+                                <p class="card-text">Society for the Welfare of Information Technology Students</p>
+                                <span class="date text-muted">2022 - 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 7 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">military_tech</span>
+                                </div>
+                                <h4 class="card-title">Alab Awards: Top 2 Leadership Award</h4>
+                                <p class="card-text">Society for the Welfare of Information Technology Students</p>
+                                <span class="date text-muted">2021 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 8 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">military_tech</span>
+                                </div>
+                                <h4 class="card-title">Alab Awards: Top 3 Outstanding Student Award</h4>
+                                <p class="card-text">Society for the Welfare of Information Technology Students</p>
+                                <span class="date text-muted">2021 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 9 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Gintong Hiraya Awards: Dean's Lister</h4>
+                                <p class="card-text">Bulacan State University College of Information and Communications Technology</p>
+                                <span class="date text-muted">2021 - 2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 10 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Gintong Hiraya Awards: Dean's Lister</h4>
+                                <p class="card-text">Bulacan State University College of Information and Communications Technology</p>
+                                <span class="date text-muted">2020 - 2021</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 11 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Academic Excellence Award: With Honors Gr. 12</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2019 - 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 12 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Artist of the Year Award</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2019 - 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 13 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Media Club Gold Medal Award</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2019 - 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 14 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Lector Commentator Bar-pin Award</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2019 - 2020</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 15 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Academic Excellence Award: With Honors Gr. 11</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2018 - 2019</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 16 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Drum and Lyre Gold Medal Award</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2017 - 2018</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 17 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">contract</span>
+                                </div>
+                                <h4 class="card-title">TechnoKids ITCup 2017 Animation Category 10th Place</h4>
+                                <p class="card-text">St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2016 - 2017</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 18 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Technokids Excellence in Information Technology Skills: Best in Computer</h4>
+                                <p class="card-text">Technokids Philippines and St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2017 - 2018</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Award Card 19 -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <div class="award-icon">
+                                    <span class="material-symbols-outlined">workspace_premium</span>
+                                </div>
+                                <h4 class="card-title">Technokids Excellence in Information Technology Skills: Best in Computer</h4>
+                                <p class="card-text">Technokids Philippines and St. James Academy Plaridel Bulacan Inc.</p>
+                                <span class="date text-muted">2016 - 2017</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!--================ End Map Area =================-->
+
+    	<!--================ Start Testimonial Area =================-->
+        <!--
+	<div class="testimonial_area section_gap_bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="main_title">
+                        <h2>client say about me</h2>
+                        <p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+                                beginning signs open god you're gathering ithe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testi_slider owl-carousel">
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Elite Martin</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Davil Saden</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Elite Martin</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Davil Saden</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t1.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Elite Martin</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi_item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img src="img/testimonials/t2.jpg" alt="">
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="testi_text">
+                                    <h4>Davil Saden</h4>
+                                    <p>Him, made can't called over won't there on divide there male fish beast own his day third seed sixth seas unto. Saw from </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!--================ End Testimonial Area =================-->
+    
+    <!--================ Start Newsletter Area =================-->
+    <!--
+    <section class="newsletter_area">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12">
+                    <div class="subscription_box text-center">
+                        <h2 class="text-uppercase text-white">get update from anywhere</h2>
+                        <p class="text-white">
+                            Bearing Void gathering light light his eavening unto dont afraid. 
+                        </p>
+                        <div class="subcribe-form" id="mc_embed_signup">
+                            <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+                                <input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                </div>
+                                <button class="primary-btn hover d-inline">Get Started</button>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--================ End Newsletter Area =================-->
+        
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logoz.png" alt="">
+							</a>
+							<h4>Let's Connect!</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.linkedin.com/in/gerome-a-tayao/"><i class="fa fa-linkedin"></i></a>
+							<a href="https://web.facebook.com/gerome0224almario/"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.youtube.com/channel/UCj2qyfT2zOuNd8FR8nhpEjQ"><i class="fa fa-youtube"></i></a>
+							<a href="https://github.com/GeromeAlmarioTayao"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; All rights reserved | <a href="https://www.linkedin.com/in/gerome-a-tayao/" target="_blank">GEROME A. TAYAO</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="//code.tidio.co/o5lic5nann7ykawli3qn3wco8jbb2xd7.js" async></script>
+
+</body>
+
+</html>

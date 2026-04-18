@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="logo.png" type="image/png">
+	<title>Gerome Portfolio</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+<style>
+	h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+
+
+
+  #polaris-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+  }
+
+  #polaris-section .vega-heading {
+    font-size: 24px;
+    color: #333;
+  }
+
+  #polaris-section .sirius-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #polaris-section .altair-image {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  #polaris-section .altair-image:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+
+  @media (max-width: 768px) {
+    #polaris-section .altair-image {
+      width: 40px; /* Reduce image size for smaller screens */
+    }
+  }
+
+
+
+    /* Theme primary color */
+    :root {
+      --primary-color: #340094;
+    }
+
+    /* Section background and padding */
+    .about_area {
+      background-color: #f9f9f9;
+      padding: 60px 0;
+    }
+
+    /* Main Titles */
+    .main_title h2 {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .main_title h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+    /* Timeline container */
+    .timeline {
+      position: relative;
+      margin: 2rem 0 4rem 0;
+      padding-left: 40px;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    /* Timeline items */
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 0.6s forwards;
+    }
+    .timeline-item:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    .timeline-item:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    .timeline-item:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    .timeline-item:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+    .timeline-item:nth-child(5) {
+      animation-delay: 1s;
+    }
+    .timeline-item:nth-child(6) {
+      animation-delay: 1.2s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Timeline icon circle */
+    .timeline-icon {
+      position: absolute;
+      left: -30px;
+      top: 4px;
+      background-color: var(--primary-color);
+      color: white;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 48;
+      box-shadow: 0 2px 8px rgb(52 0 148 / 0.4);
+      transition: background-color 0.3s ease;
+      cursor: default;
+      user-select: none;
+    }
+    .timeline-icon:hover {
+      background-color: #1c0066;
+    }
+
+    /* Card modifications */
+    .timeline-content {
+      background: white;
+      border-radius: 12px;
+      padding: 20px 25px;
+      box-shadow: 0 6px 24px rgb(52 0 148 / 0.1);
+      text-align: left;
+      transition: box-shadow 0.3s ease;
+    }
+    .timeline-content:hover {
+      box-shadow: 0 12px 48px rgb(52 0 148 / 0.2);
+    }
+    .timeline-content h4 {
+      color: var(--primary-color);
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+    .timeline-content span.date {
+      float: right;
+      font-weight: 500;
+      color: #198754; /* success green */
+      font-size: 0.9rem;
+    }
+    .timeline-content p {
+      color: #212529; /* standard body color */
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767.98px) {
+      .timeline {
+        padding-left: 20px;
+        border-left-width: 3px;
+      }
+      .timeline-icon {
+        left: -24px;
+        width: 40px;
+        height: 40px;
+        font-size: 32px;
+      }
+      .main_title h2 {
+        font-size: 2rem;
+      }
+      .timeline-content h4 {
+        font-size: 1.2rem;
+      }
+    }
+            .main_title h2 {
+            color: #340094;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        .main_title h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #340094;
+            margin-top: 8px;
+            border-radius: 4px;
+        }
+
+        /* Card modifications */
+        .awards_area .card {
+            border: 2px solid #340094;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%; /* Ensures equal height for cards */
+        }
+        .awards_area .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 24px rgb(52 0 148 / 0.3);
+            border-color: #1c0066;
+        }
+        .award-icon {
+            margin-bottom: 15px;
+            font-size: 48px;
+            color: #340094;
+        }
+        .card-title {
+            color: #340094 !important;
+            font-size: 1.2rem;
+        }
+        .date {
+            font-size: 0.9rem;
+            color: #6c757d; /* muted color */
+        }
+        
+        
+        
+        
+        		#facebook-iframe-container {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+		  gap: 20px;
+		}
+	  
+		.fb-iframe {
+		  width: 100%;
+		  height: 500px;
+		  border: none;
+		  overflow: hidden;
+		}
+	  
+		.fb-iframe-short {
+		  width: 100%;
+		  height: 130px;
+		  border: none;
+		  overflow: hidden;
+		}
+	  
+		@media (max-width: 768px) {
+		  #facebook-iframe-container {
+			display: flex;
+			flex-direction: column;
+		  }
+	  
+		  .fb-iframe {
+			height: 450px;
+		  }
+	  
+		  .fb-iframe-short {
+			height: 130px;
+		  }
+		}
+		.amethyst-grid {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Desktop View: 3 Columns */
+    @media (min-width: 1024px) {
+      .amethyst-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Tablet View: 2 Columns, 2 Rows */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .amethyst-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .amethyst-grid img:nth-child(3) {
+        justify-self: center;
+      }
+    }
+
+    /* Mobile View: 1 Column */
+    @media (max-width: 767px) {
+      .amethyst-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ruby-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .ruby-item img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .ruby-item img:hover {
+      transform: scale(1.1);
+    }
+
+    .sapphire-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #4148a2;
+      background-color: white;
+      border: 2px solid #4148a2;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .sapphire-link:hover {
+      color: white;
+      background-color: #4148a2;
+    }
+
+
+<style>
+    #facebook-iframe-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 20px;
+    }
+
+    .fb-iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+        overflow: hidden;
+    }
+
+    /* If you want shorter iframes for specific sections, you can use this class */
+    .fb-iframe-short {
+        width: 100%;
+        height: 130px;
+        border: none;
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        #facebook-iframe-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fb-iframe {
+            height: 450px;
+        }
+
+        .fb-iframe-short {
+            height: 130px;
+        }
+    }
+
+    .amethyst-grid {
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* Desktop View: 3 Columns */
+    @media (min-width: 1024px) {
+        .amethyst-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    /* Tablet View: 2 Columns, 2 Rows */
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .amethyst-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .amethyst-grid img:nth-child(3) {
+            justify-self: center;
+        }
+    }
+
+    /* Mobile View: 1 Column */
+    @media (max-width: 767px) {
+        .amethyst-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .ruby-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ruby-item img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+        transition: transform 0.3s ease;
+    }
+
+    .ruby-item img:hover {
+        transform: scale(1.1);
+    }
+
+    .sapphire-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #4148a2;
+        background-color: white;
+        border: 2px solid #4148a2;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .sapphire-link:hover {
+        color: white;
+        background-color: #4148a2;
+    }
+    
+    
+    
+    
+</style>
+</head>
+<script>
+function handleCardHover(isHovering) {
+	const card = document.getElementById('tools-card');
+	if (isHovering) {
+		card.style.transform = 'scale(1.05)';
+		card.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.2)';
+	} else {
+		card.style.transform = 'scale(1)';
+		card.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+	}
+}
+
+function handleImageHover(image, isHovering) {
+	if (isHovering) {
+		image.style.transform = 'scale(1.1)';
+		image.style.opacity = '0.8';
+	} else {
+		image.style.transform = 'scale(1)';
+		image.style.opacity = '1';
+	}
+}
+</script>
+
+
+<body>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logoz.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="portfolio.html" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Portfolio</a>
+								<ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-graphics.html">Graphic Design</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-webdev.html">Web Development</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-socialmedia.html">Social Media </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="portfolio-videos.html">Videos</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="https://blog.gerometayao.com/">Blog</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area section_gap_bottom">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hell0</h3>
+							<h1 class="text-uppercase">I am Gerome</h1>
+							<h5 class="text-uppercase">IT Service Management Specialist <br>Graphic Designer | Layout Artist </h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="https://call.whatsapp.com/video/jsL9Ge3JEsy50aVCs3DGoe"><span>Contact Me</span></a>
+								<a class="primary_btn tr-bg" href="https://tech.gerometayao.com/CurriculumVitae.pdf" target="_blank"><span>Get CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2 style="text-align: left; padding: 0px;">Designing, Innovating, Leading<br>
+							</h2>
+						<p style="text-align: justify;">
+							Hi, I'm Gerome, a versatile professional with seven years of experience in multimedia, specializing in graphic design, animation, and video editing. I pride myself on my versatility and proficiency in diverse software and interfaces.
+						</p>
+						<p style="text-align: justify;">
+							Currently, I'm advancing as an ITSM Specialist, driven by my passion for innovation and teamwork. I'm committed to continuous learning and attentive collaboration, fostering positivity, adaptability, and effective communication. Beyond my technical expertise, I hold a keen interest in project management, business development, technopreneurship, marketing, and social media management, showcasing a holistic approach to my professional growth and development. 
+						</p>
+						<a class="primary_btn" href="https://www.linkedin.com/in/gerome-a-tayao/"><span>Connect with me on LinkedIn</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+
+
+<section class="section_gap_top">
+  <div class="container">
+        <div class="main_title text-center mb-4">
+          <h2 style="text-align:left;">My Academic and Professional Background</h2>
+        </div>
+    <div class="row">
+      <!-- Academic Background (Column 1) -->
+      <div class="col-lg-6">
+        <div class="timeline">
+
+          <!-- Tertiary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Tertiary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Tertiary Education <span class="date">2020 - 2024</span></h4>
+              <p><strong>Bachelor of Science in Information Technology <br /> with Specialization in Service Management</strong><br />Bulacan State University - Main Campus <br /> College of Information and Communications Technology<br />Guinhawa, City of Malolos, Bulacan</p>
+            </div>
+          </div>
+
+          <!-- Secondary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Secondary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Secondary Education <span class="date">2014 - 2020</span></h4>
+              <p><strong>Senior High School - Academic Track <br /> STEM Strand (Science, Technology, Engineering, and Mathematics)</strong><br />St. James Academy Plaridel Bulacan Inc.<br />Sta. Ines, Plaridel, Bulacan</p>
+            </div>
+          </div>
+          
+          <!-- Primary Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Primary Education icon">
+              <span class="material-symbols-outlined" aria-hidden="true">school</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Primary Education <span class="date">2008 - 2014</span></h4>
+              <p>Plaridel Elementary School <br />Poblacion, Plaridel, Bulacan</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Professional Background (Column 2) -->
+      <div class="col-lg-6">
+        <div class="timeline">
+
+          <!-- IT and Sales Specialist -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="IT Intern icon">
+              <span class="material-symbols-outlined" aria-hidden="true">computer_arrow_up</span>
+            </div>
+            <div class="timeline-content">
+              <h4>IT and Sales Specialist<span class="date">July - Present</span></h4>
+              <p><strong>Results Marketing Partners - Lititz, Pennsylvania</strong><br />Managed digital marketing campaigns, optimized CRM systems, developed web content, closed client deals, provided technical support, and coordinated IT projects to enhance business growth and operational efficiency.</p>
+            </div>
+          </div>
+
+          <!-- IT Service Management Specialist Intern -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="IT Intern icon">
+              <span class="material-symbols-outlined" aria-hidden="true">computer</span>
+            </div>
+            <div class="timeline-content">
+              <h4>IT Service Management Specialist Intern <span class="date">January - May 2024</span></h4>
+              <p><strong>Results Marketing Partners - Lititz, Pennsylvania</strong><br />Diagnose and resolve IT issues promptly, prioritize tickets, analyze recurring problems, implement preventive measures, and contribute to continuous service improvement.</p>
+            </div>
+          </div>
+          
+          <!-- Work Immersion Employee -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Work Immersion icon">
+              <span class="material-symbols-outlined" aria-hidden="true">work</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Work Immersion Employee <span class="date">November 2019</span></h4>
+              <p><strong>Municipality of Plaridel - General Service Office</strong><br />Sets plans, strategies, and programs for purchasing, property management, maintenance, and other general admin services with efficient implementation and compliance.</p>
+            </div>
+          </div>
+          
+          <!-- Graphic Designer -->
+          <div class="timeline-item">
+            <div class="timeline-icon" aria-label="Graphic Designer icon">
+              <span class="material-symbols-outlined" aria-hidden="true">brush</span>
+            </div>
+            <div class="timeline-content">
+              <h4>Graphic Designer & Multimedia Artist <span class="date">2017 - Present</span></h4>
+              <p><strong>Freelance (Commission Based)</strong><br />Develops visual assets used in campaigns, websites, and print. Highly proficient in Photoshop, Animate, Filmora, Canva, Picsart, etc.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;">
+  <a class="primary_btn" href="https://tech.gerometayao.com">
+    <span>Work with Gerome Now!</span>
+  </a>
+</div>
+</section>
+
+		<!--================ Start Features Area =================-->
+		<section class="features_area section_gap_top">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-8 text-center">
+						<div class="main_title">
+							<h2>service offers </h2>
+							<p>
+								Empowering your digital journey with expertly crafted solutions, immersive multimedia experiences, and strategic marketing insights to elevate your brand presence and drive success in the digital age.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row feature_inner">
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s1.png" alt="">
+							<h4>IT Service</h4>
+							<p>Providing efficient and prompt resolution of IT issues, ensuring seamless infrastructure operations and user satisfaction.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s2.png" alt="">
+							<h4>Graphic Design</h4>
+							<p>Crafting visually stunning and impactful designs tailored to enhance brand identity and captivate audiences.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s4.png" alt="">
+							<h4>Multimedia Design</h4>
+							<p>Creating immersive and engaging multimedia experiences through the fusion of animation, video editing, and graphic elements.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature_item">
+							<img src="img/services/s3.png" alt="">
+							<h4>Marketing</h4>
+							<p>Offering strategic insights and innovative approaches to amplify brand visibility, attract audiences, and drive business growth through digital channels.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+<div style="text-align: center;">
+  <a class="primary_btn" href="https://tech.gerometayao.com">
+    <span>Work with Gerome Now!</span>
+  </a>
+</div>
+
+		</section>
+		<!--================ End Features Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+	
+	<section class="brand_area section_gap_bottom">
+		<div class="main_title">
+			<h2>My Digital Toolbox</h2>
+			<p>
+				From organizing tasks to creating stunning visuals, here's what I use to get the job done.
+			</p>
+		</div>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="row">
+
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Graphics and Multimedia Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool1.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool2.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool3.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool4.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool5.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool6.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Social Media Management Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool7.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool8.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool9.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Web Design and Web Development Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool10.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool11.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool12.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool13.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool14.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool15.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							  <img src="img/tools/tool16.png" 
+								   alt="Service 7" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Marketing and Automation Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool17.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool18.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool19.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool33.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Project Management and Timetracking Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool21.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool20.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool22.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool23.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						  <section id="polaris-section">
+							<h1 class="vega-heading">Communcation Tools</h1>
+							<div class="sirius-container">
+							  <img src="img/tools/tool24.png" 
+								   alt="Service 1" 
+								   class="altair-image">
+							  <img src="img/tools/tool25.png" 
+								   alt="Service 2" 
+								   class="altair-image">
+							  <img src="img/tools/tool26.png" 
+								   alt="Service 3" 
+								   class="altair-image">
+							  <img src="img/tools/tool27.png" 
+								   alt="Service 4" 
+								   class="altair-image">
+							  <img src="img/tools/tool28.png" 
+								   alt="Service 5" 
+								   class="altair-image">
+							  <img src="img/tools/tool29.png" 
+								   alt="Service 6" 
+								   class="altair-image">
+							</div>
+						  </section>
+
+						
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">7+</span>
+							<span class="smll">Years of Multimedia Experience</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">5+</span>
+							<span class="smll">Social Media Projects</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">5+</span>
+							<span class="smll">Marketing Campaigns</span>
+						</div>
+						<div class="d-flex mb-50">
+							<br>
+							<span class="lage">3+</span>
+							<span class="smll">Web Development Projects</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call me via</p>
+								<h3>09457819049</h3>
+							</div>
+						</div>
+						
+						<div style="text-align: center;">
+  <a class="primary_btn" href="https://tech.gerometayao.com">
+    <span>Work with Gerome Now!</span>
+  </a>
+</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brand Area =================-->
+
+
+<section class="portfolio_area" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main_title text-center" style="margin-bottom: 3%;">
+                    <h2>Check Out My Latest Social Media Creations!</h2>
+                    <p>Engaging designs and strategies that make brands stand out.</p>
+                </div>
+                <div id="facebook-iframe-container">
+                    <!-- Facebook iframes for various pages -->
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fresultsmarketingpartners&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                    
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkabayanmarketplace&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                    
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fexperiencepennsylvania&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                    
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhopavilion&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                    
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flarryshomedesigns&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                    
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FRommelsTinapa&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="fb-iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; padding-top: 50px;">
+  <a class="primary_btn" href="https://tech.gerometayao.com">
+    <span>Work with Gerome Now!</span>
+  </a>
+</div>
+</section>
+
+
+
+	<section class="portfolio_area section_gap_bottom" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+					<div class="main_title text-center" style="margin-bottom: 10px;">
+                        <h2>Innovative Web Solutions, Tailored for You</h2>
+						<p>Dive into my web development portfolio, featuring versatile designs and smart plugin integrations. </p>
+                    </div>
+                    
+                    <br> <br> <br> 
+					<div class="amethyst-grid">
+						<div class="ruby-item">
+						  <a href="https://www.kabayanmarketplacesolutions.com/" class="sapphire-link" target="_blank"> <img src="img/portfolio/web/webproj1.webp" alt="kabayan marketplace solutions"></a>
+						</div>
+						<div class="ruby-item">
+						  <a href="https://hopavilion.com/" class="sapphire-link" target="_blank"><img src="img/portfolio/web/webproj2.webp" alt="hilltop outdoors"></a>
+						</div>
+						<div class="ruby-item">
+						  <a href="https://timberscapeoasis.com/" class="sapphire-link" target="_blank"><img src="img/portfolio/web/webproj3.webp" alt="Timberscape Oasis"></a>
+						</div>
+						<div class="ruby-item">
+						  <a href="https://tech.gerometayao.com/HOP-freearticles/" class="sapphire-link" target="_blank"><img src="img/portfolio/web/webproj4.webp" alt="Free Articles Lead Magnet Funnel"></a>
+						</div>
+						<div class="ruby-item">
+						  <a href="https://tech.gerometayao.com/webinar-LeadFunnel/" class="sapphire-link" target="_blank"><img src="img/portfolio/web/webproj5.webp" alt="Webinar Registration Lead Funnel"></a>
+						</div>
+						<div class="ruby-item">
+						  <a href="https://tech.gerometayao.com/" class="sapphire-link" target="_blank"><img src="img/portfolio/web/webproj6.webp" alt="Personal Contact Base"></a>
+						</div>
+						
+					  </div>
+
+
+
+				</div>
+			</div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="brand_area section_gap_bottom">
+		<div class="main_title">
+			<h2 >Badges and Certifications</h2>
+			<p style="margin-bottom: 100px;">
+Certified, Competent, Continuously Learning			</p>
+	<div class="container">
+		 <section class="customer-logos slider">
+			<div class="slide"><img src="img/brands/logo1.png"></div>
+			<div class="slide"><img src="img/brands/logo2.png"></div>
+			<div class="slide"><img src="img/brands/logo3.png"></div>
+			<div class="slide"><img src="img/brands/logo4.png"></div>
+			<div class="slide"><img src="img/brands/logo5.png"></div>
+			<div class="slide"><img src="img/brands/logo6.png"></div>
+			<div class="slide"><img src="img/brands/logo7.png"></div>
+			<div class="slide"><img src="img/brands/logo8.png"></div>
+			<div class="slide"><img src="img/brands/logo9.png"></div>
+			<div class="slide"><img src="img/brands/logo10.png"></div>
+			<div class="slide"><img src="img/brands/logo11.png"></div>
+			<div class="slide"><img src="img/brands/logo12.png"></div>
+			<div class="slide"><img src="img/brands/logo13.png"></div>
+			<div class="slide"><img src="img/brands/logo14.png"></div>
+			<div class="slide"><img src="img/brands/logo15.png"></div>
+		 </section>
+	  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logoz.png" alt="">
+							</a>
+							<h4>Let's Connect!</h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.linkedin.com/in/gerome-a-tayao/"><i class="fa fa-linkedin"></i></a>
+							<a href="https://web.facebook.com/gerome0224almario/"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.youtube.com/channel/UCj2qyfT2zOuNd8FR8nhpEjQ"><i class="fa fa-youtube"></i></a>
+							<a href="https://github.com/GeromeAlmarioTayao"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy; All rights reserved | <a href="https://www.linkedin.com/in/gerome-a-tayao/" target="_blank">GEROME A. TAYAO</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script>
+		$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+	</script>
+	<!--  <script src="//code.tidio.co/o5lic5nann7ykawli3qn3wco8jbb2xd7.js" async></script> -->
+
+</body>
+
+</html>
